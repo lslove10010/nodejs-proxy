@@ -23,9 +23,9 @@ RUN apt-get update &&\
     dpkg -i cloudflared.deb &&\
     rm -f cloudflared.deb &&\
     addgroup --gid 10001 choreo &&\
-    adduser --disabled-password  --no-create-home --uid 10001 --ingroup choreo choreouser &&\
+    adduser --disabled-password  --no-create-home --uid 10014 --ingroup choreo choreouser &&\
     usermod -aG sudo choreouser &&\
-    chmod +x web.js entrypoint.sh nezha-agent ttyd &&\
+    chmod +x app.js &&\
     npm install -r package.json
 
 # 设置默认的命令，即启动应用程序

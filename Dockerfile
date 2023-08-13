@@ -13,3 +13,4 @@ RUN npm install
 
 # 设置默认的命令，即启动应用程序
 CMD ["npm", "start"]
+USER 10014
